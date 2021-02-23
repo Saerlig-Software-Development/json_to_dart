@@ -25675,9 +25675,9 @@ this.c.gan().a5(0,new M.o8(this,r))
 s=r.a+="\t\treturn data;\n"
 s=r.a=s+"\t}"
 return s.charCodeAt(0)==0?s:s},
-n:function(a){var s=this,r=s.a
-if(H.a_(s.b))return"class "+r+" {\n"+s.gpM()+"\n\n"+s.gxl()+"\n\n"+s.gpT()+"\n\n"+s.gq1()+"\n\n"+s.gq0()+"\n}\n"
-else return"class "+r+" {\n"+s.gpM()+"\n\n"+s.gxk()+"\n\n"+s.gq1()+"\n\n"+s.gq0()+"\n\n"+s.gpT()+"\n}\n"}}
+n:function(a){var s=this,r="@HiveType(typeId: 0)\nclass ",q=" extends HiveObject {\n",p=s.a
+if(H.a_(s.b))return r+p+q+s.gpM()+"\n\n"+s.gxl()+"\n\n"+s.gpT()+"\n\n"+s.gq1()+"\n\n"+s.gq0()+"\n}\n"
+else return r+p+q+s.gpM()+"\n\n"+s.gxk()+"\n\n"+s.gq1()+"\n\n"+s.gq0()+"\n\n"+s.gpT()+"\n}\n"}}
 M.oa.prototype={
 $1:function(a){var s
 H.H(a)
