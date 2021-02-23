@@ -184,8 +184,12 @@ isPrimitiveType(String typeName) {
   return isPrimitive;
 }
 
-String fixFieldName(String name,
-    {TypeDefinition typeDef, bool privateField = false}) {
+String fixFieldName(
+  String name, {
+  TypeDefinition typeDef,
+  bool privateField = false,
+  int index,
+}) {
   var properName = name;
   if (name.startsWith('_') || name.startsWith(new RegExp(r'[0-9]'))) {
     final firstCharType = typeDef.name.substring(0, 1).toLowerCase();
